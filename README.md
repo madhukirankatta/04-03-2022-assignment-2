@@ -1,1 +1,12 @@
 # 04-03-2022-assignment-2
+n=int(input())
+l=input().split()
+t=[]
+x=[]
+for i in l:
+    t.append(int(i))
+for i in t:
+    if i not in x:
+        x.append(i)
+x.sort(reverse=True)
+print(x[2])
